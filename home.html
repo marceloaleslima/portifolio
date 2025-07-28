@@ -132,18 +132,27 @@
             </div><!--Interface-->
         </section><!--Portifolio-->
         <section class="formulario">
-            <div class="interface">
-                <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+    <div class="interface">
+        <h2 class="titulo">FALE <span>COMIGO.</span></h2>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail" required>
-                    <input type="text" name="" id="" placeholder="Seu celular">
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                </form>
+        <form action="https://formspree.io/f/xwpqojjn" method="POST" id="form-contato">
+            <input type="text" name="nome" id="input-nome" placeholder="Seu nome" required>
+            <input type="email" name="email" id="input-email" placeholder="Seu e-mail" required>
+            <input type="text" name="celular" id="input-celular" placeholder="Seu celular">
+            <textarea name="mensagem" id="input-mensagem" placeholder="Sua mensagem" required></textarea>
+            <div class="btn-enviar">
+                <input type="submit" value="ENVIAR" id="btn-enviar-form">
             </div>
-        </section><!--Formulario-->
+            <div id="form-feedback" style="color: green; margin-top: 10px;"></div>
+        </form>
+    </div>
+</section>```
+
+
+<script src="menu.js" defer></script>
+<script src="form.js" defer></script>
+</body>
+</html><!--Formulario-->
     </main>
 
     <footer>
@@ -165,5 +174,6 @@
             </div><!--Footer-->
         </div>
     </footer>
+<script src="form.js" defer></script>
 </body>
 </html>
